@@ -31,8 +31,8 @@ window.SocialShareButton =
       when "douban"
         SocialShareButton.openUrl("http://shuo.douban.com/!service/share?href=#{url}&name=#{title}&image=#{img}&sel=#{desc}",popup)
       when "facebook"
-        SocialShareButton.openUrl("http://www.facebook.com/sharer.php?p[url]=#{url}&p[title]=#{title}&p[summary]=#{desc}&p[images][0]=#{img}",popup)
-        console.log("http://www.facebook.com/sharer.php?p[url]=#{url}&p[title]=#{title}&p[summary]=#{desc}&p[images][0]=#{img}")
+        console.log("http://www.facebook.com/sharer.php?s=100&p[url]=#{url}&p[title]=#{title}&p[summary]=#{desc}&p[images][0]=#{img}")
+        SocialShareButton.openUrl("http://www.facebook.com/sharer.php?s=100&p[url]=#{url}&p[title]=#{title}&p[summary]=#{desc}&p[images][0]=#{img}",popup)
       when "qq"
         SocialShareButton.openUrl("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=#{url}&title=#{title}&pics=#{img}&summary=#{desc}&site=#{appkey}", popup)
       when "tqq"
