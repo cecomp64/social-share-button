@@ -4,3 +4,6 @@
 .rvmrc
 Gemfile.lock
 pkg/*
+
+*.swp
+*.swo
